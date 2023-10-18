@@ -215,7 +215,6 @@
             <li>
               <div class="cards-html">
                 <img src="images/Marketing.jpg" alt="Marketing" width="270" />
-
                 <div class="container-cards">
                   <h3>Ryan Harris</h3>
                   <p>Marketing</p>
@@ -389,22 +388,22 @@
           <button class="close-btn" data-modal-close>&times;</button>
           </div>
           <form class="containers-info-modal" action="" method="get" autocomplete="off">
-            <label class="title-modal">Leave your information and we'll call you back</label>
-            <div class="containers-modal">
+           <label class="title-modal">Leave your information and we'll call you back</label>
+            <div class="containers-modal" autocomplete="off">
               <label class="name-container-text" for="Name">Name</label>
               <input class="container-text" type="text" id="Name">
               <svg>
                 <use href="./images/icons.svg#icon-person" />
               </svg>
             </div>
-            <div class="containers-modal">
+            <div class="containers-modal" autocomplete="off">
               <label class="name-container-text" for="Telephone">Telephone</label>
               <input class="container-text" type="text" id="Telephone"/>
               <svg>
                 <use href="./images/icons.svg#icon-phone"/>
               </svg>
             </div>
-            <div class="containers-modal">
+            <div class="containers-modal" autocomplete="off">
               <label class="name-container-text" for="E-mail">E-mail</label>
               <input class="container-text" type="text" id="E-mail"/>
               <svg>
@@ -413,15 +412,18 @@
             </div>
             <div class="container-modal-comments">
               <label class="name-container-comments" for="Comments">Comments</label>
+              <textarea placeholder="Enter the text"></textarea>
             </div>
-            <textarea></textarea>
-            <div>
-              <label>
-                <imput type="checkbox" name="terms-and-conditions" value="checked" />
-                  <span>I agree with the letter and accept the<a href="#"> Terms and Conditions</a></span>
-              </label>
+            <div class="input-container">
+                  <label class="terms-and-conditions">
+                   <input type="checkbox" class="terms-and-conditions" value="checked"/>
+                   <span class="i-agree">I agree with the letter and accept the<a class="terms" href="#"> Terms and Conditions</a></span>
+                   <svg class="box">
+                    <use href="./images/icons.svg#icon-box"/>
+                   </svg>
+                  </label>
             </div>
-            <div>
+            <div class="container-input-send">
               <input class="input-send" type="submit" value="Send"/>
             </div>
           </form>
